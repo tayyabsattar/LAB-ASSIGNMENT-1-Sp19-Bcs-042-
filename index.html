@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+    <div class="container center" >
+        <h1 class="center title padding 10px;">
+            My TODO App
+        </h1>
+        <div class="flow-right controls">
+            <span style=" padding: 10px; ">Item count: <span
+          id="item-count">0</span></span>
+            <span style=" padding: 10px;">Unchecked count: <span
+          id="unchecked-count">0</span></span>
+        </div>
+        
+        <input type="text" id="box" placeholder="Enter Your New-todo" style="width: 300px; 
+         height: 40px; margin: auto; margin-bottom: 30px; background-color: azure;" />
+
+        <button class="button center" onClick="newTodo()" style="width: 150px; margin-bottom: 3%;">New TODO</button>
+
+        <button class="button center" onClick="removeTodo()" style="width: 150px;">Remove TODO</button>
+
+        <ul id="todo-list" class="todo-list"   style="text-align: left ; line-height: 3em; font-size: 20px;">
+            
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
